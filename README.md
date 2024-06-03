@@ -2,7 +2,14 @@ Borrowed some coding strategies from: https://www.javaguides.net/2018/10/user-re
 
 Front-end:
 HTML
-CSS
-JS
-JQuery
-JavaScript Animate On Scroll library
+  CSS
+  JS
+  JQuery
+  JavaScript Animate On Scroll library
+
+Back end:
+  Spring Boot
+  Hibernate
+  Thymeleaf
+  MySQL
+  
