@@ -16,3 +16,8 @@ Back end:
 Help from:
 https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html
 
+https://stackoverflow.com/questions/21067929/how-to-use-thymeleaf-namespace-for-including-a-header-and-footer-of-a-page-witho
+
+https://bootify.io/frontend/spring-boot-with-thymeleaf-bootstrap.html
+
+

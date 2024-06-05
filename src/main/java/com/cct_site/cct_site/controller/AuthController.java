@@ -18,6 +18,11 @@ public class AuthController {
         return "index";
     }
 
+    @GetMapping("/account")
+    public String account(){
+        return "account";
+    }
+
 
 
 }

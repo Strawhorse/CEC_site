@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,15 @@
                 <div class="nav-links" id="navLinks">
                     <i class="fa-solid fa-rectangle-mark" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="account.html">MAIN</a></li>
-                        <li><a href="signup_form.html">REGISTER</a></li>
-                        <li><a href="account.html">VIEW</a></li>
-                        <li><a href="logout.php">LOGOUT</a></li>
+                        <li><a th:href="@{/account}">MAIN</a></li>
+                        <li><a th:href="@{'/register'}">REGISTER</a></li>
+                        <li><a th:href="@{/account}">VIEW USERS</a></li>
+                        <li><a href="">LOGOUT</a></li>
                     </ul>
                 </div>
                 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Staff Portal</h1>
+        <h1>Users</h1>
     </section>
 
 
