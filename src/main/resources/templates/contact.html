@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +15,7 @@
         <nav>
             <a href="index.html"><img src="images/FINAL_CEC_LOGO.svg" alt=""></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
+                <i class="fa-solid fa-rectangle-mark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
@@ -42,12 +38,12 @@
         <div class="row">
             <div class="about-col">
                 <h1>Leave A Comment</h1>
-                    <form action="contact_form.php" method="post" class="comment-form">
-                    <input type="text" name="person_name" placeholder="Enter Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="number" name="telephone" placeholder="Telephone Number">
+                    <form action="" method="post" class="comment-form">
+                    <input type="text" name="" placeholder="Enter Name" required>
+                    <input type="email" name="" placeholder="Email Address" required>
+                    <input type="number" name="" placeholder="Telephone Number">
                     <label for="department"></label>
-                    <select id="department" name="department">
+                    <select id="department" name="">
                         <option value="Sales">Sales</option>
                         <option value="Academic">Academic</option>
                         <option value="Exams">Exams</option>
@@ -56,7 +52,7 @@
                     </select>
 
                     <textarea name="contact_message" id="" cols="30" rows="5" placeholder="Leave Your Message Here" required></textarea>
-                    <button type="" class="hero-btn red-btn">POST COMMENT</button>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
 
                     <!-- add in JS verification/bot check here -->
 
