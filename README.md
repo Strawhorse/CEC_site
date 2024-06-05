@@ -13,3 +13,6 @@ Back end:
   Thymeleaf
   MySQL
   
+Help from:
+https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html
+

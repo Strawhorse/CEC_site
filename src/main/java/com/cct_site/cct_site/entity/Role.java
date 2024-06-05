@@ -1,13 +1,11 @@
 package com.cct_site.cct_site.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.lang.model.element.Name;
 import java.util.List;
 
 @Getter

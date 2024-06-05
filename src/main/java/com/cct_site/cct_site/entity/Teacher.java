@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.management.relation.Role;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +16,6 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name = "teachers")
-
 public class Teacher {
 
 //    create Teacher and Role JPA entities and establish a many-to-many mapping between them -
@@ -40,5 +39,6 @@ public class Teacher {
     @JoinTable(name = "teacher_roles",
             joinColumns = {@JoinColumn(name = "TEACHER_ID", referencedColumnName = "ID")},
             inverseJoinColumns = {@JoinColumn(name = "ROLE_ID", referencedColumnName = "ID")})
-    private List<Role> roles = new ArrayList<Role>();
+
+    private List<Role> roles = new ArrayList<>();
 }
