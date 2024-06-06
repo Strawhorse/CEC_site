@@ -20,4 +20,7 @@ https://stackoverflow.com/questions/21067929/how-to-use-thymeleaf-namespace-for-
 
 https://bootify.io/frontend/spring-boot-with-thymeleaf-bootstrap.html
 
+https://stackoverflow.com/questions/74732524/thymleaf-href-link-not-finding-html
+
+
 
