@@ -4,7 +4,7 @@ import com.cct_site.cct_site.entity.Teacher;
 
 public interface TeacherService {
 
-    void saveUser(TeacherDTO teacherDTO);
+    void saveTeacher(TeacherDTO teacherDTO);
 
     Teacher findTeacherByEmail(String email);
 
