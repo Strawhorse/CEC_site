@@ -22,5 +22,7 @@ https://bootify.io/frontend/spring-boot-with-thymeleaf-bootstrap.html
 
 https://stackoverflow.com/questions/74732524/thymleaf-href-link-not-finding-html
 
+Newest: https://www.milanwittpohl.com/projects/tutorials/full-stack-web-app/the-backend-with-java-and-spring
+
 
 
