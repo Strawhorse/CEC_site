@@ -1,5 +1,6 @@
 package com.cct_site.cct_site.service;
 
+import com.cct_site.cct_site.dto.TeacherDTO;
 import com.cct_site.cct_site.entity.Role;
 import com.cct_site.cct_site.entity.Teacher;
 import com.cct_site.cct_site.respository.RoleRepository;
@@ -29,7 +30,7 @@ public class TeacherServicempl implements TeacherService{
     public void saveTeacher(TeacherDTO teacherDTO) {
         Teacher teacher = new Teacher();
         teacher.setName(teacherDTO.getFirstName() + " " + teacherDTO.getLastName());
-        teacher.getEmail(teacherDTO.getEmail());
+        teacherDTO.setEmail(teacher.getEmail());
 
 
 //        use Spring Security to encrypt password
@@ -38,7 +39,7 @@ public class TeacherServicempl implements TeacherService{
 
         Role role = roleRepository.findByName("ROLE_ADMIN");
         if (role == null) {
-            role.checkRoleExist();
+            role = checkRoleExist();
         }
         teacher.setRoles(Arrays.asList(role));
         teacherRepository.save(teacher);
@@ -46,12 +47,12 @@ public class TeacherServicempl implements TeacherService{
     }
 
     @Override
-    public Teacher findTeacherByEmail(String email) {
+    public Teacher findUserByEmail(String email) {
         return teacherRepository.findByEmail(email);
     }
 
-
-    public List<TeacherDTO> findAllTeachers(){
+    @Override
+    public List<TeacherDTO> findAllUsers() {
         List<Teacher> teachers = teacherRepository.findAll();
         List<TeacherDTO> collect = teachers.stream().map((teacher) -> mapToTeacherDTO(teacher)).collect(Collectors.toList());
         return collect;
