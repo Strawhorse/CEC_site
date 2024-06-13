@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.CCT_site</groupId>
     <artifactId>CEC_site</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.FIRST_RUN</version>
     <name>CCT_site</name>
     <description>CCT_site</description>
     <properties>
@@ -50,7 +50,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-<!--            <scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -69,6 +68,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
